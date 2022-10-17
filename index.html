@@ -2,20 +2,75 @@
 <html lang="en">
   <head>
     <title> Meeting Minutes </title>
-  </head>
-  <body>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Raleway" rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="styles.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-   <h2>CSE 110 LAB 2</h2>
+    <style>
+      h2 {
+        color:blueviolet
+        background-color chocolate;
+      }
+      * {
+            box-sizing: border-box; 
+        }
+        body {
+            margin: 0;
+        }
+        #main {
+            display: flex;
+            min-height: calc(100vh - 40vh);
+        }
+        #main > article {
+            flex: 1;
+        }
+        header, footer, article, nav, aside {
+            padding: 1em;
+        }
+        header, footer , body {
+            background: rgb(209, 147, 228);
+            height: 400px;
+        }
+    </style>
+
+
+  </head>
+  
+  <body>
+    <header>
+      <div >
+        <h3 class="title">CSE 110 LAB 2</h3>
+    </div>
+
    <h3> Meeting Minutes </h3>
-   <h4> 10/06/2022 </h4>
+   <h3>16 October 2022</h3>
+
+    <nav class="nav_data">
+     
+      <ul id="nav-unordered-list">
+          <li><a href="#attendees">Present</a></li>
+          <li><a href="#agenda">Approval of Agenda</a></li>
+          <li><a href="#unfinished-business">Business from the Previous Meeting </a></li>
+          <li><a href="#new-business">New Business</a></li>
+          <li><a href="#miscellaneous">Adjournment</a></li>
+          <li><a href="#presented-media">Additions to the Agenda</a></li>
+          <li><a href="#recording">Digram, Audio and Video Section</a></li>
+          
+      </ul>
+  </nav>
+    </header>
+
    
    <hr>
 
     <h4> Opening: </h4>
+    <details class = "details_tab" style="background-color: black;color:white">
     <p>The regular meeting of the Toronto Association was called to order at 6:00
         PM on April 25, 2022 in The Hive by Tatiana Morand</p>
-
-    <strong> Present: </strong>
+    </details>
+    <div class = "attList">
+    <strong id = "attendees"> Present: </strong>
     <ul>
         <li>Tatiana Morand. Facilitator</li>
         <li>Drusa Shvama la. Sccretary</li>
@@ -25,19 +80,20 @@
         <li>Drusilla Longos, Board Member</li>
         <li>Enrique Carver, Executive Director</li>
     </ul>
+  </div>
     <br>
 
     <strong>Absent</strong>
     <p>James Clarkson</p>
 
-
+    <div id = "agenda">
     <strong>Approval of Agenda</strong> 
     <p>The agenda was unanimously approved as distributed</p>
-
+  </div>
     <strong>Approval of Minutes</strong>
     <p>The minutes of the previous meeting were unanimously approved as distributed</p>
 
-    <strong>Business from the Previous Meeting</strong>
+    <strong id="unfinished-business">Business from the Previous Meeting</strong>
     <br>
     <a href = ""> Budget Comittee Report </a> 
     <P>The budget for 2019 has been finalized, and was distributed at this meeting by Saifullah
@@ -51,13 +107,13 @@
             of hives that some members have been purchasing. She found that to buy them in bulk for
             the association would be too expensive, and recommended against it. Her motion to
             dismiss this proposal was seconded and passed</p>
-    <strong>New Business</strong>
+    <div id = "newBusiness"><strong>New Business</strong>
     <br>
     <u>Budget Comittee Report</u> 
     <p>Deferred for next meeting as James Clarkson was not in attendance</p>
-
+  </div>
     <hr>
-
+<div id = "recording">
     <section>
         <h4> Digram, Audio and Video Section</h4>
     <img src="assets/class_diagram_information_school-min.png" alt="Diagram" width="300" height="400">
@@ -74,21 +130,21 @@
     <br>
     <hr>
     </section>
-
-
+  </div>
+<div id = "newBusiness">
     <strong>Additions to the Agenda</strong>
     <p>Juda Zackary made a motion that a honey sale at the local farmers' market be discussed.
         Enrique Carver dismissed the motion, and proposed adding it to next month's meeting
         instead. Agatha Kay seconded that motion, and it was added to the agenda for next meeting</p>
-    
+      </div>
     <Strong>Agenda for Next Meeting</Strong>
     <ul>
         <li> Marketing Plan for Gala</li>
         <li> Gala Agenda </li>
         <li> Product Sale </li>
     </ul>
-
-    <Strong>Adjournment</Strong>
+<div class = "grid-container" id = "miscellaneous">
+    <Strong >Adjournment</Strong>
     <p>Meeting was adjourned at 8:30 PM by Tatiana Morand. The next general meeting will be
         at 6:00 PM on May 22nd, 2022, in The Hive</p>
     <br>
@@ -99,9 +155,24 @@
     <label for = "name1">Approved by:   <input type="text" id="name1" name="name1"> </label>
     <br>
     <br>
+ 
 
     <input type = "submit" value = "sumbit"/>
+  </div>
+
+  <footer>
+    <div class = textBox>
+    <textarea>Ask question here !</textarea>
+    </div>
     
+    <form action="https://www.google.com/search" method="get">
+      <label>Google: <input type="search" name="q"></label> <input type="submit" value="Search...">
+  </form>
+    <b>later gators!</b>
+    
+    <nav><a href="/">Home</a></nav>
+</footer>
+
   </body>
 
 </html>

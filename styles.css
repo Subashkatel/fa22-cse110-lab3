@@ -1,0 +1,122 @@
+body {
+    background-color: lightblue;
+}
+
+h1 {
+    color: navy;
+    text-align: center;
+    border-radius: 5in;
+    border-style: solid;
+    margin: auto;
+    position: fixed;
+}
+
+h2{
+    color: #000000;
+    text-align: center;
+    text-decoration: underline;
+    position: relative;
+}
+
+h3{
+    color: rgb(120, 120, 220);
+    text-align: center;
+}
+
+strong{
+    color: hsl(208, 100%, 16%);
+    margin-left: 0.6in;
+}
+
+/* Add box to the attendance list*/
+.attList {
+    margin-top: 40px;
+    margin-right: 3cm;
+    margin-bottom: 2rem;
+    margin-left: 4em;
+
+    padding: 1%;
+    border: 0.02in solid blue;
+}
+
+#newBusiness {
+    margin: 10px;
+
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 2em;
+    
+    border-right: 5px;
+    border-top: 5px;   
+    border-bottom: 5px;
+    border-right: 5px;
+    border-style: solid;
+    border-color: red;
+}
+
+.teamNames{
+    display: inline-block;
+    height: 230px;
+    width: 230px;
+}
+
+
+
+textarea.textBox{
+    display: block;
+    height: 150px;
+    max-width: 300px;
+    min-width: 100px;
+}
+
+
+button, textarea:active {
+    color: blue;
+}
+
+textarea:hover{
+    color: green;
+}
+
+.grid-container {
+    display: grid;
+    grid-template: 150px / auto auto auto;
+}
+
+.videoText{
+    text-align: right;
+}
+
+/* Media */
+@media (max-width: 1250px) {
+    body {
+        background-color: white;
+    }
+}
+
+/* Font */
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
+/* Experimenting with other selectors */
+div p {
+    background-color: cyan;
+}
+
+div > p {
+    text-align: auto;
+}
+
+h1 ~ h2{
+    background-color: violet;
+}
+
+h3 + h4{
+    background-color: peru;
+}
+
+a[title] {
+    color: red;
+}
