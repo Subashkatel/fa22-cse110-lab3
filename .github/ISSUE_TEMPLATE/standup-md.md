@@ -7,16 +7,6 @@ assignees: Subashkatel
 
 ---
 
----
-Name:"
-About: Describe the daily situation.
-Title: "
-Labels: ''
-Assignees: ''
-Milestones: "
-
----
-
 #### Name:  _____________
 #### Date:  ___ /___ /______
 #### Standup question:
